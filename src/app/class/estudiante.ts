@@ -3,6 +3,7 @@ export class Estudiante {
     apellidos: string;
     identificacion: number;
     calificacion: number;
+    
 
     constructor(identificacion: number, nombre: string, apellidos: string, calificacion: number) {
         this.nombre = nombre;

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Estudiante } from './class/estudiante';
-
+declare var jQuery: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
 
   estudiantes = new Array<Estudiante>();
   ngOnInit() {
+    this.openModal('modalBienvenida');
     this.buildEstudiantes();
   }
   names = new Array("Guillermo", "Lucas", "David", "Roger", "Bruno", "Iñaki", "Alex", "Carlos");
@@ -50,4 +51,10 @@ export class AppComponent implements OnInit {
     const qualification = (Math.random() * (rangeIni - rangeFIn) + rangeFIn).toFixed(2);
     return + qualification;
  }
+
+ private openModal(id: string) {
+  jQuery('#'+ id).modal('show');
+ }
+
+ 
 }
