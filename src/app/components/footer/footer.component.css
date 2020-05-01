@@ -1,0 +1,26 @@
+.footer {
+    background-color: #333;
+    padding-top: 2px;
+    width: 100%;
+  }
+  
+  .footerSMR {
+    background-color: #333;
+    color: #FEFEFE;
+    /* padding-top: 5px; */
+  }
+  
+  #datosEntidad {
+    margin-top: 5px !important;
+    margin-bottom: 1px !important;
+  }
+  
+  #datosSAIMYR {
+    font-size: 11px !important;
+  }
+  
+  .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  
